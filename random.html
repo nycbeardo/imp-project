@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     
 <!-- chatbot using from -->
-<link rel="stylesheet" type="text/css" href="dist/jquery.convform.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.convform.css">
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -73,8 +73,6 @@
                     <div class="col-lg-12">
                         <h1>Random</h1>
                         <p>A chatbot can be found when you scroll down. Its designed to interact and answer simple questions if you have any.</p>
-                        
-                        
                     </div>
                 </div>
             </div>
@@ -92,33 +90,33 @@
 	                                    <option value="sure">Sure!</option>
 	                                </select>
 	                                <input type="text" name="name" conv-question="Alright! First, tell me your full name, please.|Okay! Please, tell me your name first.">
-	                                <input type="text" conv-question="Howdy, {name}:0! It's a pleasure to meet you. (note that this question doesn't expect any answer)" no-answer="true">
-	                                <select name="programmer" conv-question="So, are you a programmer? (this question will fork the conversation based on your answer)">
+	                                <input type="text" conv-question="Well Hello, {name}:0! It's a pleasure to meet you." no-answer="true">
+	                                <select name="programmer" conv-question="So, are you a programmer">
 	                                    <option value="yes">Yes</option>
 	                                    <option value="no">No</option>
 	                                </select>
 	                                <div conv-fork="programmer">
 	                                    <div conv-case="yes">
-	                                        <input type="text" conv-question="A fellow programmer! Cool." no-answer="true">
+	                                        <input type="text" conv-question="A fellow programmer" no-answer="true">
 	                                    </div>
 	                                    <div conv-case="no">
-		                                    <select name="thought" conv-question="Have you ever thought about learning? Programming is fun!">
+		                                    <select name="thought" conv-question="Well thats ok, no hard feelings if youre not but are you sure?">
 		                                    	<option value="yes">Yes</option>
 		                                    	<option value="no">No..</option>
 		                                    </select>
 	                                    </div>
 	                                </div>
-	                                <input type="text" conv-question="This plugin supports multi-select too. Let's see an example." no-answer="true">
-	                                <select name="multi[]" conv-question="What kind of music do you like?" multiple>
-	                                    <option value="Rock">Rock</option>
-	                                    <option value="Pop">Pop</option>
-	                                    <option value="Country">Country</option>
-	                                    <option value="Classic">Classic</option>
+	                                <input type="text" conv-question="Youll see another question, you may answer if you like" no-answer="true">
+	                                <select name="multi[]" conv-question="Which artists have you heard of" multiple>
+	                                    <option value="Monet">Monet</option>
+	                                    <option value="Cezanne">Cezanne</option>
+	                                    <option value="Degas">Degas</option>
+	                                    <option value="Renoir">Classic</option>
 	                                </select>
-	                                <input type="text" conv-question="convForm also supports regex patterns. Look:" no-answer="true">
-	                                <input conv-question="Type in your e-mail" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="email" type="email" name="email" required placeholder="What's your e-mail?">
-	                                <input conv-question="Now tell me a secret (like a password)" type="password" data-minlength="6" id="senha" name="password" required placeholder="password">
-																	<select conv-question="Selects also support callback functions. For example, try one of these:">
+	                                <input type="text" conv-question="I can also take emails, just like a regular form! Surprise, Surprise!!" no-answer="true">
+	                                <input conv-question="Type in your e-mail (real or not, it doesnt matter)" pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" id="email" type="email" name="email" required placeholder="What's your e-mail?">
+	                                <input conv-question="Now tell me a secret (like a password). Kidding, you shouldnt be giving me that lol" type="password" data-minlength="6" id="senha" name="password" required placeholder="password">
+																	<select conv-question="I can also support callback functions as well, try it out by clicking on one">
 																			<option value="google" callback="google">Google</option>
 																			<option value="bing" callback="bing">Bing</option>
 																	</select>
@@ -143,9 +141,9 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-    <script type="text/javascript" src="dist/autosize.min.js"></script>
+    <script type="text/javascript" src="js/autosize.min.js"></script>
 	<script type="text/javascript" src="dist/dragscroll.js"></script>
-	<script type="text/javascript" src="dist/jquery.convform.min.js"></script>
+	<script type="text/javascript" src="js/jquery.convform.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
