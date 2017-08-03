@@ -33,6 +33,16 @@ p.star1 {
     text-align: center;
 }
 
+p.star2 {
+    font-size: small;
+    text-align: center;
+}
+
+
+p.random3 {
+    text-align: center;
+}
+
 .modal-body {
     background-color: #009688;
 }
